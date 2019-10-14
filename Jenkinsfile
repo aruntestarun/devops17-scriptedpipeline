@@ -19,7 +19,7 @@ pipeline {
               junit '**/target/surefire-reports/*.xml' 
               }
             }
-          parallel {
+          stages {
             stage('UAT unit test1.0') {
               steps {
                   snDevOpsStep ()
